@@ -1,0 +1,11 @@
+// 1.21	2026-01-16T13:41:50.1423439	All About Guns/Model Definitions
+de0c816f8538350d0a0ad6f7b14aa6f7362925e6 assets\all-about-guns\models\item\ammunition_table.json
+ad0e5940f02358b9e1748fc37e2487a37e97662b assets\all-about-guns\models\block\brass_block.json
+763d7c655dc931dd198f7eb5f50a3a3e8e1762d3 assets\all-about-guns\models\item\iron_bullet.json
+d9267466b65d475ce6631c792484d54d487b00a8 assets\all-about-guns\models\item\bullet_casing.json
+3d5b7be0886cd624d150d8ebc17f7387f71c7a6c assets\all-about-guns\models\item\brass_ingot.json
+8b8452eb00cfb1dfb25e4cd337a8006626f57147 assets\all-about-guns\blockstates\brass_block.json
+21b884cac9b17a5ce07ec14acd6265cd15d5a200 assets\all-about-guns\models\item\brass_nugget.json
+7820741fb63484f67c056b9ba89a071771a56a97 assets\all-about-guns\models\block\ammunition_table.json
+612563854acafb50fedb26282bbb7507424e787b assets\all-about-guns\models\item\brass_block.json
+d8b9e741345cee00f3ae4b843127908d939bfc45 assets\all-about-guns\blockstates\ammunition_table.json

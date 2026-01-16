@@ -1,0 +1,18 @@
+{
+  "type": "all-about-guns:ammunition_table",
+  "ingredients": [
+    {
+      "item": "all-about-guns:bullet_casing"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "result": {
+    "id": "all-about-guns:iron_bullet",
+    "count": 1
+  }
+}

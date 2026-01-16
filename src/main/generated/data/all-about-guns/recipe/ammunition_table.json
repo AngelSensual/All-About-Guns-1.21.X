@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "all-about-guns:brass_ingot"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "BB",
+    "PP",
+    "PP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "all-about-guns:ammunition_table"
+  }
+}

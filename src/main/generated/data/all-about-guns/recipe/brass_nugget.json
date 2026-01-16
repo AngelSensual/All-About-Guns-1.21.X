@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "all-about-guns:brass_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "all-about-guns:brass_nugget"
+  }
+}

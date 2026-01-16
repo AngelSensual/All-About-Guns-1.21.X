@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "all-about-guns",
+	"version": "${version}",
+	"name": "All About Guns",
+	"description": "Mod Made By AngelSensual",
+	"authors": [
+		"AngelSensual"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/all-about-guns/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.angelsensual.abg.AllAboutGuns"
+		],
+		"fabric-datagen": [
+			"com.angelsensual.abg.AllAboutGunsDataGenerator"
+		],
+		"client": [
+			"com.angelsensual.abg.AllAboutGunsClient"
+		]
+	},
+	"mixins": [
+		"all-about-guns.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

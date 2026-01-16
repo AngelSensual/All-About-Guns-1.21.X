@@ -1,0 +1,12 @@
+{
+  "item.all-about-guns.brass_ingot": "Brass Ingot",
+  "item.all-about-guns.brass_nugget": "Brass Nugget",
+  "item.all-about-guns.bullet_casing": "Bullet Casing",
+  "item.all-about-guns.iron_bullet": "Iron Bullet",
+
+  "block.all-about-guns.brass_block": "Block of Brass",
+
+  "block.all-about-guns.ammunition_table": "Ammunition Table",
+
+  "itemgroup.all-about.guns.abg_items": "All About Guns Items"
+}

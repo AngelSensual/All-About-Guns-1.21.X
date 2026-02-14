@@ -3,7 +3,9 @@ package com.angelsensual.abg.item;
 import com.angelsensual.abg.AllAboutGuns;
 import com.angelsensual.abg.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,11 +22,37 @@ public class ModItemGroups {
                             entries.add(ModItems.BRASS_INGOT);
                             entries.add(ModItems.BRASS_NUGGET);
                             entries.add(ModItems.BULLET_CASING);
+                            entries.add(ModItems.COPPER_NUGGET);
+                            entries.add(ModItems.DIAMOND_NUGGET);
+                            entries.add(ModItems.NETHERITE_NUGGET);
+                            entries.add(ModItems.LAPIS_NUGGET);
+                            entries.add(ModItems.EMERALD_SHARD);
+                            entries.add(ModItems.QUARTZ_SHARD);
+                            entries.add(ModItems.FLINT_SHARD);
+                            entries.add(ModItems.AMETHYST_FRAGMENT);
                             entries.add(ModBlocks.AMMUNITION_TABLE);
                             entries.add(ModItems.IRON_BULLET);
+                            entries.add(ModItems.TEST_GUN);
                         }).build());
 
         public  static void registerItemGroups(){
             AllAboutGuns.LOGGER.info("Registering Item Groups for " + AllAboutGuns.MOD_ID);
+
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+                entries.add(ModItems.BRASS_INGOT);
+                entries.add(ModItems.BRASS_NUGGET);
+                entries.add(ModItems.COPPER_NUGGET);
+                entries.add(ModItems.DIAMOND_NUGGET);
+                entries.add(ModItems.NETHERITE_NUGGET);
+                entries.add(ModItems.LAPIS_NUGGET);
+                entries.add(ModItems.EMERALD_SHARD);
+                entries.add(ModItems.QUARTZ_SHARD);
+                entries.add(ModItems.FLINT_SHARD);
+                entries.add(ModItems.AMETHYST_FRAGMENT);
+            });
+
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+                entries.add(ModBlocks.BRASS_BLOCK);
+            });
         }
 }

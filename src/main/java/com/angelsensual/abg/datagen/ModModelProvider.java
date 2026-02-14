@@ -25,6 +25,14 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.BRASS_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRASS_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAPIS_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.QUARTZ_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLINT_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AMETHYST_FRAGMENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BULLET_CASING, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_BULLET, Models.GENERATED);
 

@@ -20,6 +20,7 @@ public class AllAboutGuns implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+
 		ModBlocks.registerModBlocks();
 
 		ModBlockEntities.registerBlockEntities();

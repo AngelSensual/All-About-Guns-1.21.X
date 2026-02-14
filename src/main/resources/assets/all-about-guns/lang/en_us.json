@@ -1,8 +1,18 @@
 {
   "item.all-about-guns.brass_ingot": "Brass Ingot",
   "item.all-about-guns.brass_nugget": "Brass Nugget",
+  "item.all-about-guns.copper_nugget": "Copper Nugget",
+  "item.all-about-guns.diamond_nugget": "Diamond Nugget",
+  "item.all-about-guns.netherite_nugget": "Netherite Nugget",
+  "item.all-about-guns.lapis_nugget": "Lapis Lazuli Nugget",
+  "item.all-about-guns.emerald_shard": "Emerald Shard",
+  "item.all-about-guns.flint_shard": "Flint Shard",
+  "item.all-about-guns.quartz_shard": "Quartz Shard",
+  "item.all-about-guns.amethyst_fragment": "Amethyst Fragment",
   "item.all-about-guns.bullet_casing": "Bullet Casing",
   "item.all-about-guns.iron_bullet": "Iron Bullet",
+
+  "item.all-about-guns.test_gun": "Test Gun",
 
   "block.all-about-guns.brass_block": "Block of Brass",
 

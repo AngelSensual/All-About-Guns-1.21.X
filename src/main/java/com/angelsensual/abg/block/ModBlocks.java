@@ -35,9 +35,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         AllAboutGuns.LOGGER.info("Registering Mod Blocks for " + AllAboutGuns.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-           entries.add(ModBlocks.BRASS_BLOCK);
-        });
     }
 }

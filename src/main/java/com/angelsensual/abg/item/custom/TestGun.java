@@ -1,8 +1,8 @@
 package com.angelsensual.abg.item.custom;
 
-import com.angelsensual.acl.item.custom.GunItem;
+import net.minecraft.item.Item;
 
-public class TestGun extends GunItem {
+public class TestGun extends Item {
 
     public TestGun(Settings settings) {
         super(settings);

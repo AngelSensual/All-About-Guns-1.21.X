@@ -10,7 +10,5 @@ pluginManagement {
 }
 
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT' apply false
+	id 'fabric-loom' version '1.15-SNAPSHOT' apply false
 }
-
-include 'LibEdit'

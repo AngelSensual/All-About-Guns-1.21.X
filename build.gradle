@@ -12,6 +12,7 @@ base {
 
 repositories {
 	mavenLocal()
+    maven { url 'https://jitpack.io' }
 }
 
 fabricApi {
@@ -40,8 +41,9 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Use the local project dependency
-	include implementation(project(path: ":LibEdit", configuration: "namedElements"))
+	// Dependency on the external AngelS-Core-Lib via JitPack
+    modImplementation "com.github.AngelSensual:AngelS-Core-Lib-1.21.X:master-SNAPSHOT"
+    include "com.github.AngelSensual:AngelS-Core-Lib-1.21.X:master-SNAPSHOT"
 }
 
 sourceSets {

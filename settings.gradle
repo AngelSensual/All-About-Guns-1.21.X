@@ -8,3 +8,9 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
+
+plugins {
+	id 'fabric-loom' version '1.9-SNAPSHOT' apply false
+}
+
+include 'LibEdit'

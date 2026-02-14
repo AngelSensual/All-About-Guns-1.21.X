@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "angels-core-lib",
+  "version": "${version}",
+  "name": "AngelS Core Lib",
+  "description": "Core library for AngelSensual mods",
+  "authors": [
+    "AngelSensual"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/angels-core-lib/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.angelsensual.acl.AngelSCoreLib"
+    ],
+    "client": [
+      "com.angelsensual.acl.AngelSCoreLibClient"
+    ]
+  },
+  "mixins": [
+    "angels-core-lib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

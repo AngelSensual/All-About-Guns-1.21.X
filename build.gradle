@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -12,7 +12,11 @@ base {
 
 repositories {
 	mavenLocal()
-    maven { url 'https://jitpack.io' }
+	// Add repositories to retrieve artifacts from in here.
+	// You should only use this when depending on other mods because
+	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
+	// for more information about repositories.
 }
 
 fabricApi {
@@ -35,15 +39,15 @@ loom {
 }
 
 dependencies {
+	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Dependency on the external AngelS-Core-Lib via JitPack
-    modImplementation "com.github.AngelSensual:AngelS-Core-Lib-1.21.X:master-SNAPSHOT"
-    include "com.github.AngelSensual:AngelS-Core-Lib-1.21.X:master-SNAPSHOT"
+	//AngelS Core Lib dependency - Use modImplementation only (no include) to avoid classloader conflicts
+	modImplementation "com.angelsensual.acl:angels-core-lib:0.1.0-SNAPSHOT"
 }
 
 sourceSets {
@@ -95,5 +99,13 @@ publishing {
 			artifactId = project.archives_base_name
 			from components.java
 		}
+	}
+
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	repositories {
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
 	}
 }

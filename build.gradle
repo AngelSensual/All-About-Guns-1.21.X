@@ -46,8 +46,8 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	//AngelS Core Lib dependency - Use modImplementation only (no include) to avoid classloader conflicts
-	modImplementation "com.angelsensual.acl:angels-core-lib:0.1.0-SNAPSHOT"
+	//AngelS Core Lib dependency - Use dynamic version to catch snapshots
+	modImplementation "com.angelsensual.acl:angels-core-lib:0.1.0-SNAPSHOT+"
 }
 
 sourceSets {
